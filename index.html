@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Swapping two numbers</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+  <div>
+
+<h3>Click the button to demonstrate the swapping of two numbers.</h3>
+
+
+<button onclick="myFunction()" style="padding: 10px; margin: 5px;">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function Reference(obj) { 
+    console.log("Inside Call by Reference Method"); 
+    obj.a =obj.b+obj.a;
+    obj.b =obj.a-obj.b;
+    obj.a =obj.a-obj.b;
+    console.log(obj);
+  } 
+  function myFunction(){
+  var obj = {};
+  obj.a = prompt("Enter num a: ");
+  obj.a= Number(obj.a);
+  obj.b = prompt("Enter num b: ");
+  obj.b= Number(obj.b);
+  console.log("Before Call by Reference Method"); 
+  console.log(obj);
+  Reference(obj) ;
+  console.log("After Call by Reference Method"); 
+  console.log(obj);
+}
+</script>
+</div>
+</body>
+</html>

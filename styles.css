@@ -1,0 +1,25 @@
+body{
+
+    margin: 0;
+    padding: 80px;
+    background: linear-gradient(45deg,#dba4dd,#4d125f);
+    height: auto;
+    text-align: center;
+    
+}
+
+h3{
+    font-style: oblique;
+    
+}
+button{
+    font-size: 15px;
+    font-style: oblique;
+    background-color:  rgb(222, 248, 240);
+
+}
+#demo{
+    font-size: 18px;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
